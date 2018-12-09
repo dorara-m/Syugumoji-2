@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Syugumoji</title>
+  <meta name='viewport', content="width=device-width,initial-scale=1.0" />
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <h1>S<span>yu</span>gu <span>moji</span></h1>
+      </div>
+    </header>
+    <div id="app" class="contents">
+      <!-- この#appの内側にテンプレートを書き込んでいく -->
+      <div class="container">
+        <textarea v-model="message" class="textarea" placeholder="文字数を数えます。編集内容は一定時間でクリップボードにコピーされます。"></textarea>
+        <div class="length"><span>{{message.length}}</span>文字</div>
+      </div>
+    </div>
+    <footer>
+      <p>Created by Mofin</p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
